@@ -12,7 +12,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 public class DataConnection {
 
-	private String resource="SqlMapConfig.xml";
+	private String resource="mybatis-config.xml";
 	private SqlSessionFactory sqlSessionFactory;
 	private SqlSession sqlSession;
 	
