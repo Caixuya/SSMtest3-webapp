@@ -25,7 +25,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	  <!--创建SQL映射文件UserMapper.java-->
 	  <!--  <mapper class="com.thxy.dao.user.UserMapper"/>-->
 		
-		<!--批量加载mapper指定 mapper 接口的包名，mybatis自动扫描包下的mapper接口进行加载--> 
+		<!--批量加载mapper： mapper 接口的包名，mybatis自动扫描包下的mapper接口进行加载--> 
 		<package  name= "com.thxy.dao.user" />
 	</mappers>
 </configuration>
