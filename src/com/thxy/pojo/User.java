@@ -1,6 +1,14 @@
 package com.thxy.pojo;
 
-import com.mysql.fabric.xmlrpc.base.Data;
+import java.util.Date;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.alibaba.fastjson.annotation.JSONField;
+
+//import org.springframework.format.annotation.DateTimeFormat;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class User {
 	
@@ -9,11 +17,27 @@ public class User {
 	private String userName;
 	private String userPassword;
 	private Integer gender;
-	private Data creationDate;
+	@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")//页面写入数据库时格式化
+//	@DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
+	@JSONField(format="yyyy-MM-dd HH:mm:ss")//数据库导出页面时json格式化 
+	private Date creationDate;
 	private Integer modifyBy;
-	private Data modifyDate;
-	
+	private Date modifyDate;
+	private Integer currentPageNo;
+	private Integer pageSize;
 
+	public Integer getCurrentPageNo() {
+		return currentPageNo;
+	}
+	public void setCurrentPageNo(Integer currentPageNo) {
+		this.currentPageNo = currentPageNo;
+	}
+	public Integer getPageSize() {
+		return pageSize;
+	}
+	public void setPageSize(Integer pageSize) {
+		this.pageSize = pageSize;
+	}
 	public Integer getId() {
 		return id;
 	}
@@ -50,16 +74,16 @@ public class User {
 	public void setGender(Integer gender) {
 		this.gender = gender;
 	}
-	public Data getCreationDate() {
+	public Date getCreationDate() {
 		return creationDate;
 	}
-	public void setCreationDate(Data creationDate) {
+	public void setCreationDate(Date creationDate) {
 		this.creationDate = creationDate;
 	}
-	public Data getModifyDate() {
+	public Date getModifyDate() {
 		return modifyDate;
 	}
-	public void setModifyDate(Data modifyDate) {
+	public void setModifyDate(Date modifyDate) {
 		this.modifyDate = modifyDate;
 	}
 	@Override

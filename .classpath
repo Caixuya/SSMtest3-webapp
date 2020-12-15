@@ -24,5 +24,15 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mybatis-3.2.2-sources.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.0-bin.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="F:/SSM高级架构/实验5/SSMtest5-webapp/WebContent/WEB-INF/lib/spring-context-3.2.13.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/.m2/repository/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar" sourcepath="C:/Users/Administrator/.m2/repository/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="mysql"/>
+			<attribute name="maven.artifactId" value="mysql-connector-java"/>
+			<attribute name="maven.version" value="5.1.30"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -10,4 +10,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		resultType="int">
 		select count(id) from t_user
 	</select>
+	<select id="getPageUsers" resultType="com.thxy.pojo.User">
+		select * from t_user order by id DESC limit #{from},#{pageSize}
+	</select>
 </mapper>
