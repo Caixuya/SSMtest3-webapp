@@ -12,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class User {
 	
-	private Integer id;
+	private long id;
 	private String userCode;
 	private String userName;
 	private String userPassword;
@@ -38,10 +38,11 @@ public class User {
 	public void setPageSize(Integer pageSize) {
 		this.pageSize = pageSize;
 	}
-	public Integer getId() {
+
+	public long getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	public Integer getModifyBy() {
